@@ -1,0 +1,71 @@
+body {
+  background-color: black;
+  color:white;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.cell img {
+  width: 25px;
+  height: auto;
+}
+
+.restert{
+
+     visibility:hidden
+}
+
+.superBoard{
+  width: 380px;
+  margin-left: 30px;
+  color: pink;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.5em;
+  visibility:hidden
+}
+
+.header{
+width: 380px;
+margin-left: 30px;
+text-align: center;
+line-height: 60px;
+background-color: pink;
+color: black;
+
+}
+
+.scoreTable{
+font-size: 1.5em;
+color: rgb(98, 209, 209);
+text-align: left;
+width: 350px;
+  
+}
+
+.scoreTable .score{
+  text-decoration: underline;
+}
+
+.scoreTable .icon{
+color: red;
+font-weight: bold;
+
+}
+
+
+/* .btn{ */
+  /* width: 400px; */
+/* } */
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */

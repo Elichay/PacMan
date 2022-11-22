@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body onload="onInit()" onkeyup="movePacman(event)">
+<div class="header">
+    <h1>Let's Play!!</h1>
+</div>
+    <h2>Score: <span>0</span></h2>
+    
+    <div class="board-container">
+        
+    </div>
+    
+   <div class="superBoard">Super is Active!!
+
+   </div>
+
+    <button class="restert" onclick="onInit()">Play Again</button>
+<br><br>
+    <div>
+        <table class="scoreTable">
+            <th class="score">Score table</th>
+            <th></th>
+            <th class="score">points</th>
+            <tr>
+                <td>Ghost Points</td>
+                <td class="icon">&#9781</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Cherry</td>
+                <td class="icon">🍒</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Power Food</td>
+                <td class="icon">🍕</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td class="icon">∙</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/pacman.js"></script>
+    <script src="js/ghost.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
