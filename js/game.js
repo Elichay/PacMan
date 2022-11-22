@@ -64,7 +64,6 @@ function buildBoard() {
                 (i === size - 2 && j === size - 2)) {
                 board[i][j] = POWER_FOOD
             }
-            //should count food here??
         }
     }
     return board
@@ -87,7 +86,6 @@ function updateScore(diff) {
     if (gGame.isOn) {
         gGame.score += diff
     } else { gGame.score = 0 }
-    // gGame.score += diff
     // DOM
     document.querySelector('h2 span').innerText = gGame.score
 
@@ -166,54 +164,5 @@ function playSound(sound) {
     sound.play()
 
 }
-
-// function victory(nextCell) {
-//     var elHeader = document.querySelector('.header h1')
-//     // console.log('victory')
-//     elHeader.style.backgroundColor = 'yellow'
-//     elHeader.innerText = 'Victory!!!'
-//     // alert('Victory!')
-//     clearInterval(gIntervalGhosts)
-//     gGame.isOn = false
-//     // console.log('gPacman.location', gPacman.location)
-//     // console.log('nextCell', nextCell)
-//     // renderCell(nextCell, '😎')
-//     // renderCell(gPacman.location, 'A')
-//     document.querySelector('.restert').style.visibility = 'visible'
-//     clearInterval(gCherryInterval)
-// }
-
-
-// function gameOver1() {
-//     var elHeader = document.querySelector('.header h1')
-    
-    
-//     elHeader.style.backgroundColor = 'red'
-//     elHeader.innerText = 'You\'ve Lost...'
-//     // console.log('Game Over')
-//     clearInterval(gIntervalGhosts)
-//     gGame.isOn = false
-//     // console.log('gPacman.location', gPacman.location)
-//     renderCell(gPacman.location, '☠')
-//     document.querySelector('.restert').style.visibility = 'visible'
-//     clearInterval(gCherryInterval)
-// }
-
-
-// function gameOver2() {
-//     // TODO
-//     clearInterval(gIntervalGhosts)
-//     clearInterval(gAddCherryIntervalId)
-//     gGame.isOn = false
-//     if (gGame.isVictory) {
-//         renderCell(gPacman.location, '👑')
-//         toggleModal('You Won!!!', true)
-//         // document.querySelector('.victory-modal').style.opacity = '1'
-//     } else {
-//         renderCell(gPacman.location, '💥')
-//         toggleModal('Game Over', true)
-//         // document.querySelector('.game-over-modal').style.opacity = '1'
-//     }
-// }
 
 

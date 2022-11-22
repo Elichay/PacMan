@@ -34,7 +34,6 @@ function createGhost(board) {
 }
 
 function moveGhosts() {
-    // DONE: loop through ghosts
     for (var i = 0; i < gGhosts.length; i++) {
         const ghost = gGhosts[i]
         moveGhost(ghost)
